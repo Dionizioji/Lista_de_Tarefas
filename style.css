@@ -1,0 +1,96 @@
+/* .chau-philomene-one-regular {
+    font-family: "Chau Philomene One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+} */
+
+:root {
+    --dark-color: #000000;
+    --light-color: #39e8ff;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: var(--dark-color);
+    font-family: "Chau Philomene One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    color: var(--light-color);
+    padding: 30px;
+}
+
+.lines {
+    align-items: center;
+    display: flex;
+    width: 90%;
+    height: 40px;
+    text-align: center;
+    margin: 10px 10px 10px 0px;
+}
+
+#line1 {
+    width: auto;
+    font-size: 15px;
+}
+
+#input-field{
+    border: solid var(--light-color) 2px;
+    border-radius: 5px;
+    width: 60vw;
+    height: 30px;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    font-size: 15px;
+   
+}
+
+#add-task-btn,
+#delete-btn,
+#confirm-btn {
+    width: 90px;
+    height: 30px;
+    margin: 0px 0px 0px 15px;
+    border: solid var(--light-color) 2px;
+    border-radius: 5px;
+    color: var(--light-color);
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+#add-task-btn:hover,
+#delete-btn:hover,
+#confirm-btn:hover {
+    -webkit-box-shadow: 0px 0px 7px 6px var(--light-color);
+    -moz-box-shadow: 0px 0px 7px 6px var(--light-color);
+    box-shadow: 0px 0px 7px 6px var(--light-color);
+}
+
+#add-task-btn:active,
+#delete-btn:active,
+#confirm-btn:active {
+    transform: scale(0.95); 
+    box-shadow: 0px 0px 4px 3px var(--light-color); 
+    background-color: var(--light-color); 
+}
+
+.new-input-form{
+    display: flex;
+    border: solid var(--light-color) 2px;
+    border-radius: 5px;
+    width: 60vw;
+    height: 30px;
+    align-items: center;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    font-size: 15px;  
+    margin: 10px 10px 10px 0px;
+    color: var(--dark-color);
+    justify-content: space-between;
+}
